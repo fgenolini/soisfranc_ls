@@ -1,0 +1,1 @@
+Single file in a directory, to make test pass

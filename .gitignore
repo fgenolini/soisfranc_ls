@@ -1,2 +1,3 @@
 ls/deno.lock
 ls/ls.exe
+/ls/*.exe

@@ -1,14 +1,20 @@
 /**
  * @module
  * This module exports the function tree() to list files in a directory
- * 
+ *
+ * Copied from the deno YouTube video: "Announcing Deno 2"
+ *
  * @example
  * ```ts
+ * // Run this in a Jupyter notebook
+ * // https://docs.deno.com/runtime/reference/cli/jupyter/
  * import { tree } from "jsr:@soisfranc/ls";
  * import * as Plot from "npm:@observablehq/plot";
  * import { document } from "jsr:@ry/jupyter-helper";
  *
  * const files = await tree("../..");
+ *
+ * // Show directory contents as a horizontal tree graph
  * Plot.plot({
  *   marks: [ Plot.tree(files) ],
  *   axis: null,
@@ -17,12 +23,6 @@
  * });
  * ```
  */
-
-// Copied from the deno presentation on YouTube "Announcing Deno 2"
-
-// This module can be published to the jsr
-// and then used in a Jupyter notebook
-// https://docs.deno.com/runtime/reference/cli/jupyter/
 
 import { walk } from "jsr:@std/fs@1";
 import { relative } from "node:path";

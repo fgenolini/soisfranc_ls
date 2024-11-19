@@ -6,6 +6,7 @@
  * ```ts
  * import { tree } from "jsr:@soisfranc/ls";
  * import * as Plot from "npm:@observablehq/plot";
+ * import { document } from "jsr:@ry/jupyter-helper";
  *
  * const files = await tree("../..");
  * Plot.plot({

@@ -41,5 +41,5 @@ if (import.meta.main) {
   const files = await tree(Deno.args[0]);
 
   // Use CSS to change the console background colour
-  console.log("%c" + files.join("\n"), "background-color: darkblue");
+  console.log("%c" + files.join("\n"), "background-color: lightgreen");
 }
